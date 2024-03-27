@@ -14,7 +14,15 @@
     height: 10vh;
     padding: 0.5vw;
   }
-  
+  .paper{
+    width: 25px;
+  }
+  .Editar{
+    cursor: pointer;
+  }
+  .Excluir{
+    cursor: pointer;
+  }
   #logo img{
     height: 8vh;
   }
