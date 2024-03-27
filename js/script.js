@@ -7,9 +7,8 @@ const btnSaveNote = document.querySelector("#btn-save-note");
 const btnCloseNote = document.querySelector("#btn-close-note");
 const editar = document.querySelector(".Editar");
 const Excluir = document.querySelector(".Excluir");
-// ------------------------------------------------------------------
-// ---------------------------EVENTOS--------------------------------
-// ------------------------------------------------------------------
+
+// ---------------------------EVENTS--------------------------------
 
 addNote.addEventListener("click", (evt) => {
     evt.preventDefault();
@@ -39,9 +38,9 @@ btnSaveNote.addEventListener("click", (evt) => {
     saveNote(data);
 });
 
-// ------------------------------------------------------------------
-// ---------------------------FUNÇÕES--------------------------------
-// ------------------------------------------------------------------
+
+// ---------------------------FUNCTIONS--------------------------------
+
 
 const saveNote = (note) => {
     let notes = loadNotes();
@@ -59,9 +58,9 @@ const saveNote = (note) => {
         document.querySelector('#input-id').value = note.id;
         notes.push(note);
     }
-    // console.log(notes);
+    
     notes = JSON.stringify(notes);
-    // console.log(notes);
+   
     localStorage.setItem('notes', notes);
 };
 
@@ -134,7 +133,7 @@ const showNote = (note) => {
   
     modal.style.display = 'block';
     modalView.style.display = 'none';
-    document.querySelector("input-id").value = note.id;
+    document.querySelector("#input-id").value = note.id;
 })
 excluir.addEventListener('click', (evt) =>{
     evt.preventDefault();
