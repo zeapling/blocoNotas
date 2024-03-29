@@ -11,15 +11,16 @@
 </head>
 <body>
     <header>
-        <div id="logo"><a href="index.html"><img src="images/download.png" /></a></div>
+        <div id="logo"><a href="index.html"> <i class="bi bi-journal-bookmark noteIcon2 p-1"></i>
+        </a></div>
         <div id="display"></div>
         <div id="user"></div>
     </header>
     <main>
-        <div id="controls">
-            <div id="add-note">
-               <a href="" >
-                  <i class="bi bi-plus-square-fill" style="font-size: 2rem;"></i>
+        <div class="controls add-note lg" style=" cursor:pointer #94b885;">
+            <div class="add-note2" >
+               <a href="">
+                  <i class="bi bi-plus noteIconPlus " style="font-size: 2rem;"></i>
                </a>
            </div>
          </div>
@@ -28,40 +29,44 @@
          <div id="modal-view">
             <div id="close-modal">
                <a href="" >
-                  <i class="bi bi-x-square" ></i>
+                  <i class="bi bi-x-square noteIconRed " ></i>
               </a>
            </div>
            <div id="title-note"> </div>
            <div id="content-note"> </div>
-           <a class="Editar"><img src="images/OIP2.jpg" class="paper"></img></a>
-           <a class="Excluir"><img src="images/OIP.jpg" class="paper"></img></a>
+           <a class="Editar"><i class="bi bi-pencil-square paper noteIcon"></i></img></a>
+           <a class="Excluir"><i class="bi bi-trash paper noteIconRed "></i> </img></a>
            <div id="controls-note"> </div>
          
+           
         </div>
  
         <div id="modal">
-          <div class="mb-3" style="border-bottom: 1px solid #999; display:flex; justify-content: space-between;">
+          <div class="mb-3" style="border-bottom: 1px solid #9385b8; display:flex; justify-content: space-between;">
              <div>
                 <a href="" id="btn-save-note" class="btnSalvar">
-                   <i class="bi bi-save" ></i>
+                   <i class="bi bi-save noteIcon " ></i>
                 </a>
              </div>
            <div>
-             <a href="" style="color:#999" id="btn-close-note">
-               <i class="bi bi-x-square" ></i>
+             <a href="" style="color:#9385b8" id="btn-close-note">
+               <i class="bi bi-x-square noteIconRed " ></i>
              </a>
            </div>
          </div>
          <input type="hidden" id="input-id" >
-         <div class="mb-3">
-           <label for="title" class="form-label">Title</label>
-           <input type="text" class="form-control" id="input-title" placeholder="Title" >
-         </div>
+         <div class="mb-3 ">
+           <label for="title" class="form-label">Título</label>
+           <input style= "background-color:  rgb(54, 54, 54); color:white; border: solid 1px #94b885;" type="text" class="form-control style: background-color:  rgb(54, 54, 54)" id="input-title" placeholder="Título" ></div>
       
          <div class="mb-3">
-           <label for="content" class="form-label">Notes</label>
-           <textarea class="form-control" id="input-content" rows="4"></textarea>
-         </div>
+           <label for="content" class="form-label">Nota</label>
+           <textarea style= "background-color:  rgb(54, 54, 54); color:white;  border: solid 1px #94b885;" class="form-control " id="input-content" rows="4" placeholder="Escreva a Sua Nota Aqui!" ></textarea> </div>
+           <div class="mb-3">
+
+          
+
+            
       </div> 
 	</main>
     <msgs></msgs>

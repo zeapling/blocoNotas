@@ -1,14 +1,92 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
 *{
     margin:0;
     padding:0;
   }
-  
+body{
+  background: rgb(41,41,41);
+  background: linear-gradient(180deg, rgba(41,41,41,1) 7%, rgba(36,36,36,1) 79%, rgba(41,41,41,1) 100%);
+
+
+}
+.add-note{
+  background-color: #3f3939;
+  cursor:pointer;
+  margin-inline: 90px; 
+  border-radius: 7px;
+   margin-block: 4vw; 
+   text-align: center;
+}
+.add-note :hover{
+
+  background-color: #429246;
+  cursor: pointer;
+  border-radius: 7px; 
+}
+header{
+  background-color: #000000;
+}
+.noteIcon{
+  font-size: 30px;
+  color:  #94b885;
+}
+.noteIcon2{
+  font-size: clamp(1vw, 60px, 2.5vw);
+  color:  #94b885;
+}
+.noteIconPlus{
+color: aliceblue;
+
+}
+.noteIconRed{
+  font-size: 30px;
+  color:  #ad6060;
+}
+.form-control{
+  font-family: "Ubuntu", sans-serif;
+  background-color:  rgb(67, 83, 71);
+  color: rgb(233, 233, 233);  
+}
+textarea{
+  font-family: "Ubuntu", sans-serif;
+  background-color:  rgb(54, 54, 54);
+}
+input{
+  font-family: "Ubuntu", sans-serif;
+  background-color:  rgb(54, 54, 54);
+}
+label{
+  font-family: "Ubuntu", sans-serif;
+  color: rgb(233, 233, 233);  
+}
+title{
+  color: rgb(233, 233, 233);  }
+  h1{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 600;
+    color: rgb(233, 233, 233);   }
+  p{
+    font-family: "Ubuntu", sans-serif;
+    font-size:25px;
+    color: rgb(233, 233, 233);  ;
+  }
   header{
-    border-bottom: 1px solid #1b85dc;
+    border-bottom: 1px solid #589e3c;
     height: 10vh;
     display:flex;
   }
-  
+  .card-body{
+    padding-block: 1vw;
+    padding-inline: 2vw;
+    cursor: pointer;
+    background: rgb(37,37,38);
+   }
+   .confirmDelete{
+
+    display: none;
+   }
   #logo{
     width: 30vw;
     height: 10vh;
@@ -50,11 +128,12 @@
   }
   
   #modal-view{
-    border:1px solid #1b85dc;
+    border:1px solid #9b93bd;
     position: absolute;
     display:none;
     width: 90vw;
-    padding:10px;
+    padding-block: 1vw;
+    padding-inline: 2vw;
    
   }
   
@@ -63,11 +142,13 @@
   }
   
   #modal{
-    border:1px solid #1b85dc;
+    border:1px solid#9b93bd;
     position: absolute;
     padding:2vh 2vw;
     display:none;
     width: 90vw;
+    padding-block: 1vw;
+    padding-inline: 2vw;
   }
   
   #controls-note{
